@@ -1,0 +1,15 @@
+*config.json
+*.log
+*node_modules*
+.idea/
+nohup.out
+.ntvs_analysis.dat
+*.sln
+*.njsproj*
+modules/*
+typings/
+tsd.json
+*.vs*
+obj/*
+/bin/Microsoft.NodejsTools.WebRole.dll
+.DS_Store
