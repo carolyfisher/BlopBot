@@ -21,6 +21,7 @@
 
 'use strict';
 
+require('dotenv').load();
 // Arbitary location module loading requirements
 global.__rootPath = __dirname;
 global.rootPathJoin = function () {
