@@ -1,14 +1,3 @@
-/**
- * Script to extend require, allowing us to reload javascript code
- * without doing a hard reset on the application.
- *
- * Written By:
- *         Matthew Knox
- *
- * License:
- *        MIT License. All code unless otherwise specified is
- *        Copyright (c) Matthew Knox and Contributors 2016.
- */
 
 'use strict';
 

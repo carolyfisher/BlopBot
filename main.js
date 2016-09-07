@@ -1,24 +1,4 @@
-/** Node.js server for a bot
- *
- * Herein lies the Node.js serverside script to tell node what to do to ensure
- * we get all the magical goodness that is:
- *         (Karma + Sassy) * Facebook - Hipchat = Concierge
- * Note: it does waaaaaaay more than this now. It even runs on slack!
- *
- * Written By:
- *         Matthew Knox
- *
- * Contributors:
- *         Dion Woolley
- *         Jay Harris
- *         Matt Hartstonge
- *         (Others, mainly strange people)
- *
- * License:
- *        MIT License. All code unless otherwise specified is
- *        Copyright (c) Matthew Knox and Contributors 2015.
- */
-
+//TODO: Make all modules Hubot and CoffeeScript
 'use strict';
 
 require('dotenv').load();
@@ -60,8 +40,8 @@ global.coffeescriptLoaded = true;
 
 // Check startup modes
 if (!args || args.length === 0) {
-    console.info('No integrations specified, defaulting to \'test\'.');
-    args.push('test');
+    console.error("You can't do that. Specify an integration.");
+    process.exit();
 }
 
 // Check startup integrations
@@ -85,22 +65,8 @@ for (var i = 0; i < args.length; i++) {
 }
 
 process.on('uncaughtException', function(err) {
-    if (console.isDebug()) {
-        console.error('CRITICAL ERROR WAS UNHANDLED:');
-    }
-    else {
-        console.error('An unhandled error occurred. Start as debug for details.');
-    }
+        console.error("Carol screwed up. It's not the Bot's fault, go get mad at Carol");
     console.critical(err);
-});
-
-process.on('SIGHUP', function () {
-    console.warn('SIGHUP received. This has an unconditional 10 second terminate time which may not be enough to properly shutdown...');
-    startup.stop();
-});
-
-process.on('SIGINT', function () {
-    startup.stop();
 });
 
 startup.run(startArgs);

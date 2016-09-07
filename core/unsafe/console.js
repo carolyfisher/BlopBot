@@ -1,19 +1,4 @@
-﻿/**
- * Sets up the console and logging system.
- *
- * Code in here consists of nasty hacks to the console and process
- * prototypes, done so that we have control over how the console
- * is logged to.
- *
- * Written By:
- *        Matthew Knox
- *
- * License:
- *        MIT License. All code unless otherwise specified is
- *        Copyright (c) Matthew Knox and Contributors 2015.
- */
-
-var colours = require.safe('colors'),
+﻿var colours = require.safe('colors'),
     fs = require('fs'),
     strip = require.safe('stripcolorcodes'),
     info = console.info,
