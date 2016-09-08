@@ -1,0 +1,12 @@
+{
+    "name": "reddit",
+    "startup": "reddit.js",
+    "version": 1,
+    "help": [
+        [
+            "reddit",
+            "Does something. The unhelpful author didn't specify what."
+        ]
+    ],
+    "priority": "normal"
+}

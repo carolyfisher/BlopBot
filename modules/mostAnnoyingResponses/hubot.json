@@ -1,0 +1,10 @@
+{
+  "name": "mostAnnoyingResponses",
+  "startup": "mostAnnoyingResponses.coffee",
+  "version": 1,
+  "dependencies": [],
+  "configuration": [],
+  "help": [
+  ],
+  "priority": "normal"
+}

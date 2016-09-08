@@ -1,0 +1,22 @@
+{
+    "name": "xkcd",
+    "startup": "xkcd.coffee",
+    "version": 1,
+    "dependencies": [],
+    "configuration": [],
+    "help": [
+        [
+            "{{commandPrefix}}xkcd latest",
+            "The latest XKCD comic"
+        ],
+        [
+            "{{commandPrefix}}xkcd {num}",
+            "XKCD comic {num}"
+        ],
+        [
+            "{{commandPrefix}}xkcd ",
+            "Random comic"
+        ]
+    ],
+    "priority": "normal"
+}

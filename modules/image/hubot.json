@@ -1,0 +1,14 @@
+{
+    "name": "images",
+    "startup": "image.coffee",
+    "version": 1,
+    "dependencies": [],
+    "configuration": [],
+    "help": [
+        [
+            "{{commandPrefix}}image {query}",
+            "Gets image with Google CS API. Add 'gif' for animation, do not use too much, I only get 100 searches a day."
+        ]
+    ],
+    "priority": "normal"
+}
